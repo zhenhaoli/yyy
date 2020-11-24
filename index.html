@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YYY Logistics</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- beauty font ROBOTO -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="page-header text-center">YYY Logistics</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal">
+
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="panel">
+                            <div class="panel-heading custom-header-panel">
+                                <h3 class="panel-title roboto">General Information</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group">
+                                    <label for="pol" class="col-sm-4 control-label">POL / Port of Loading<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <select id="pol" name="pol" class="form-control" required="">
+                                            <option value="" disabled="" selected="">Select Port of Loading</option>
+                                            <option value="1">FRA</option>
+                                            <option value="2">MUC</option>
+                                            <option value="3">BER</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pod" class="col-sm-4 control-label">POD / Port of Discharge<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <select id="pod" name="pod" class="form-control" required="">
+                                            <option value="" disabled="" selected="">Select Port of Discharge</option>
+                                            <option value="1">CAN</option>
+                                            <option value="2">SHA</option>
+                                            <option value="3">PEK</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="airline" class="col-sm-4 control-label">Airlines<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <select id="airline" name="airline" class="form-control" required="">
+                                            <option value="" disabled="" selected="">Select your airline</option>
+                                            <option value="1">CZ</option>
+                                            <option value="2">LH</option>
+                                            <option value="3">CA</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="birth_day">Pick up date<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <div class="form-inline">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupday" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Day</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2" selected="selected">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupmonth" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Month</option>
+                                                            <option value="1">January</option>
+                                                            <option value="2">February</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupyear" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Year</option>
+                                                            <option value="2000" selected="selected">2021</option>
+                                                            <option value="1999">2020</option>
+                                                            <option value="1998">2019</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="birth_day">ETD / estimated Time of Departure<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <div class="form-inline">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupday" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Day</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2" selected="selected">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupmonth" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Month</option>
+                                                            <option value="1">January</option>
+                                                            <option value="2">February</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupyear" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Year</option>
+                                                            <option value="2000" selected="selected">2021</option>
+                                                            <option value="1999">2020</option>
+                                                            <option value="1998">2019</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="birth_day">ETA / estimated time of arrival<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <div class="form-inline">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupday" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Day</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2" selected="selected">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupmonth" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Month</option>
+                                                            <option value="1">January</option>
+                                                            <option value="2">February</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group no-margin-form-group">
+                                                        <select name="pickupyear" class="form-control" required="">
+                                                            <option value="" disabled="" selected="">Year</option>
+                                                            <option value="2000" selected="selected">2021</option>
+                                                            <option value="1999">2020</option>
+                                                            <option value="1998">2019</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="panel">
+                            <div class="panel-heading custom-header-panel">
+                                <h3 class="panel-title roboto">Shipper</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Full Name <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Telephone<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Street <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Zipcode <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">City <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Country <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">VAT Number <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Contact Person Name <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Province <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="panel">
+                            <div class="panel-heading custom-header-panel">
+                                <h3 class="panel-title roboto">Consignee</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Full Name <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Telephone<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Street <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Zipcode <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">City <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Country <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">VAT Number <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Contact Person Name <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Province <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="panel">
+                            <div class="panel-heading custom-header-panel">
+                                <h3 class="panel-title roboto">Paletts</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Amount <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Total gross weight<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Length <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Width <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Height <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="panel">
+                            <div class="panel-heading custom-header-panel">
+                                <h3 class="panel-title roboto">Commodities details</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Commodity <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">HS code<span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Additiona information <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Your reference Number <span class="requerido"> *</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" value="" oninvalid="this.setCustomValidity('Campo requerido')" oninput="setCustomValidity('')" required="" maxlength="70">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <button type="button" class="btn btn-primary btn-block" style="margin-bottom: 50px">Submit Order</button>
+                    </div>
+                </div>
+
+
+
+            </form> <!-- Fint form -->
+        </div>
+    </div>
+    <!-- Tab panes -->
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
